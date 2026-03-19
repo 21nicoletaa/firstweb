@@ -1,0 +1,30 @@
+/*commentaries in CSS*/
+/* applying styles*/
+
+/* sintaxis
+selector {
+propriety: value;
+propriety: value;
+}
+
+*/
+
+/*good practice help applying the styles; 
+*/
+
+h1 {
+    background-color: brown;
+    color: aqua;
+    text-align: center;
+    padding: 5px;
+}
+
+h3 {
+    background-color: black;
+    color: bisque;
+}
+
+p {
+    font-style: italic;
+    color: rgb(50, 31, 4);
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first web</title>
+    <style>
+        p{
+            padding: 5px;
+            background-color: bisque;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!--Comments-->
+ <!--Text label-->
+ <!--header
+ h1, h2, h3, h4, h5, h6
+ used for title and susbtitle.
+ -->
+ <!--h1 it's written only one on the page, the rest can be written on the other pages any time we need -->
+<h1 id="post-title"> my first web</h1>
+<!--applying the styles in line,they are inside of the label of the html element-->
+<h2 id="post-subtitle" style="background-color: blueviolet;">
+    if you can image and dream it, you can create it and programming 
+</h2>
+<h3>this is a h3</h3>
+
+<!--Paragraphs (p)-->
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus veritatis quia necessitatibus a, quas nesciunt officiis ducimus ipsa atque. Explicabo voluptatem dolorem iste, esse illo odit expedita neque officia eaque.
+</p>
+<!--give importance to text content-->
+<p>
+    in this paragraph <strong> this text it's important</strong>
+</p>
+
+<p>
+    in this paragraph <em> the text in italic it's important</em> also
+</p>
+
+<!--link-->
+<a href="https://www.atigra.es" target="_blank">link of the best site in the world</a>
+
+<!--images-->
+<!--extern images-->
+<img src="https://media.istockphoto.com/id/1436684245/es/foto/modelos-de-moda-en-una-pasarela-durante-un-desfile-de-moda.jpg?s=612x612&w=is&k=20&c=MknAszeMowkHwqp0Qc16zPSIqzVPtMpqZ4xdcA9px98=" alt="fashion show runway" width="200px"> 
+
+<!--local images-->
+<img src="img/ahmadardity-fashion-show-1746582_1920.jpg" alt="fashion show" width="300px">
+
+<!--lists-->
+<!--unorganised-->
+<h3>unorganised list</h3>
+<ul>
+    <li>dress</li>
+    <li>shoes</li>
+    <li>hair</li>
+    <li>makeup</li>
+</ul>
+
+<!--organised-->
+<h3>organised list</h3>
+<ol>
+    <li>chairs</li>
+    <li>accesories</li>
+    <li>colurs</li>
+    <li>photos</li>
+</ol>
+
+<!--global attributes-->
+<!--
+Atributo id 
+syntax: <open label id=Nicoleta"> 
+    description: we generate a unique identifier for the HTML element to allow direct navigation. This can be done using CSS, JavaScript, etc.
+    class atribute
+    syntax: <open_label class="AXIOPOLIS CERNAVODA"
+    description: this is a group identifier; the same name can be specified for multiple elements or groups of elements. Ideal for applying styles uniformly or assigning changes from a script.
+    -->
+
+<!--structure of the content-->
+<!--contents-->
+<!--
+div - storage container for grouping content blocks.
+-->
+<div class="article">
+    <div class="figure">
+        <img src="https://pixabay.com/es/images/download/pexels-catwalk-1840941_1920.jpg" alt="here it's an image" width="150px">
+    </div>
+    <h3>post title</h3>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus enim quam, eum quisquam vel eos vero architecto, voluptas optio pariatur eligendi, sed veniam unde quas doloremque mollitia dignissimos recusandae repellat.
+    </p>
+</div>
+
+<!--
+span - we use it for details, and it groups the content in a line one inside the other. We use it to apply styles to small parts of text or small component without changing the flux of the document.
+-->
+
+<p>
+    this is a <span class="highlighted text">
+        highlighted text</span>inside a paragraph.
+</p>
+
+        <!--semantic HTML-->
+        <header>
+            <figure id="logo">
+                <img src="" alt="logo">
+            </figure>
+            <nav>
+                <ul>
+                    <li>home</li>
+                    <li>blog</li>
+                    <li>about us</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero">
+                <figure id="hero-background">
+                    <img src="" alt="background hero">
+                </figure>
+
+                <div class="hero-text">
+                    <h1>page title</h1>
+                    <h2>page subtitle</h2>
+                    <button>send</button>
+                </div>
+            </section>
+
+            <section id="blog">
+                <article>
+                    <figure>
+                        <img src="" alt="imagine article">
+                    </figure>
+                    <h3>title post</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laudantium odit nemo doloribus dolores quod voluptates, minus quas ullam excepturi, tenetur odio recusandae. Distinctio provident amet voluptate doloremque, illo quod.
+                    </p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div id="left">
+                <h4>subscribe</h4>
+            </div>
+            <div id="right">
+                <ul>
+                    <li>github</li>
+                    <li>instagram</li>
+                </ul>
+            </div>
+        </footer>
+        <!--forms-->
+        <h3>form</h3>
+        <form action="script.js" method="post">
+            <label for="name"> name:</label>
+            <input type="text" id="name" name="name"
+            placeholder="write your name"/>
+
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" placeholder="write your email"/>
+        
+
+            <label for="password">password</label>
+            <input type="password" id="password" name="password"
+            placeholder="write your password"/>
+
+            <button type="submit">send</button>
+            <button type="reset">delete</button>
+        </form>
+</body>
+</html>
