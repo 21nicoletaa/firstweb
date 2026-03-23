@@ -1,30 +1,165 @@
-/*commentaries in CSS*/
-/* applying styles*/
-
-/* sintaxis
-selector {
-propriety: value;
-propriety: value;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-*/
+body {
+    background: black;
+    color: #8a2be2;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-/*good practice help applying the styles; 
-*/
+/* HEADER FIX */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #8a2be2;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    z-index: 1000;
+}
 
-h1 {
-    background-color: brown;
-    color: aqua;
+.logo {
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+nav a {
+    color: black;
+    margin-left: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body {
+    padding-top: 100px;
+}
+
+/* HERO */
+.hero {
     text-align: center;
-    padding: 5px;
+    margin-bottom: 60px;
 }
 
-h3 {
-    background-color: black;
-    color: bisque;
+.hero h2 {
+    font-size: 50px;
+    letter-spacing: 5px;
 }
 
-p {
-    font-style: italic;
-    color: rgb(50, 31, 4);
+.hero p {
+    opacity: 0.6;
+}
+
+/* GRID PRODUSE */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 0 50px;
+}
+
+/* CARD PRODUS */
+.product {
+    text-decoration: none;
+    color: #8a2be2;
+    transition: 0.4s;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+.product:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.product p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* PRODUCT PAGE */
+.product-page {
+    text-align: center;
+    padding: 50px;
+}
+
+.product-page img {
+    width: 400px;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+.product-page img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.product-page .sizes button {
+    background: transparent;
+    border: 1px solid #8a2be2;
+    color: #8a2be2;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-page .sizes button:hover {
+    background: #8a2be2;
+    color: black;
+}
+
+/* BUTTON */
+button {
+    background: #6a00ff;
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 0 20px #8a2be2;
+    transform: scale(1.05);
+}
+
+/* PAGE TEXT */
+.page {
+    text-align: center;
+    padding: 50px;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    background: black;
+    border: 1px solid #8a2be2;
+    color: #8a2be2;
 }
